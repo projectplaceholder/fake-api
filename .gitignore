@@ -70,3 +70,5 @@ yarn-error.log
 
 # ignoring generated files
 /generated
+
+.prettierrc
