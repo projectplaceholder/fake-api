@@ -106,7 +106,6 @@ const Header = ({ siteTitle }) => (
         <GitHubLink href="https://github.com/projectplaceholder/fake-api">
           GitHub
         </GitHubLink>
-
       </p>
     </Content>
   </SiteHeader>
