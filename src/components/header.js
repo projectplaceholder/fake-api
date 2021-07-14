@@ -71,39 +71,15 @@ const SiteHeader = styled.header`
   align-content: center;
   justify-content: center;
 `
-const dbLink = styled.a`
-  color: black;
-  margin-left: 15px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-
-  ::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-
-  :hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-`
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
       <p>
-        <HomeLink to="/db">{siteTitle}</HomeLink>
+        <HomeLink to="/">{siteTitle}</HomeLink>
         <NavLink to="/about">About</NavLink>
-        <GitHubLink href="https://github.com/projectplaceholder/fake-api">
+        <NavLink to="/db">Data</NavLink>
+        <GitHubLink href="https://github.com/projectplaceholder/fake-api" target="_blank">
           GitHub
         </GitHubLink>
       </p>
