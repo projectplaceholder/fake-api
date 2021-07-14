@@ -1,5 +1,5 @@
 const faker = require('faker');
-const amount = 1000;
+const amount = 50;
 
  const func =next =>create => {
     const path = `fakeCourses.json`;
