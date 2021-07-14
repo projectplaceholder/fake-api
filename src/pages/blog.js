@@ -1,3 +1,5 @@
+//currently not using this but will later use it again for a wiki
+
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { css } from "@emotion/core"
