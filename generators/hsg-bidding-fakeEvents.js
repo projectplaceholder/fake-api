@@ -8,21 +8,21 @@ const func = (next) => (create) => {
     var hsgBiddingFakeEvents = [];
 
     for (var course_id = 0; course_id < amount_courses; course_id++) {
-      const date = new Date(2021, 9, 13, 8, 0);
-      var starttime_course = date.addDays(
-        faker.datatype.number({ min: 0, max: 5 })
-      );
-      var starttime_course = date.addHours(
-        faker.datatype.number({ min: 0, max: 10 })
-      );
-      var endtime_course = date.addMinutes(
-        (Math.floor(Math.random() * 3) + 1) * 30
-      );
+    var startdate = new Date('2021-09-13T08:00');
+    var length = (Math.floor(Math.random() * 3) + 1) * 30;
 
-      fakeCourses.push({
+
+    startdate.setTime(startdate.getTime()+Math.floor(Math.random()*8)*60*60*1000);
+    startdate.setTime(startdate.getTime()+Math.floor(Math.random()*5)*24*60*60*1000);
+    enddate = (startdate.getTime()+length*60*1000);
+    
+    final_start = moment.utc(startdate).format('YYYY-MM-DD HH:mm');
+    final_end = moment.utc(enddate).format('YYYY-MM-DD HH:mm');
+
+      hsgBiddingFakeEvents.push({
         "id": course_id,
-        "starttime": starttime_course,
-        "endtime": endtime_course,
+        "starttime": final_start,
+        "endtime": final_end,
       });
     }
     return { "hsg-bidding-fakeEvents": hsgBiddingFakeEvents };
