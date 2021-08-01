@@ -13,7 +13,7 @@ const func = (next) => (create) => {
     // defining the start moment and the random length of courses (in 30 min intervals)
     var startdate = new Date('2021-07-26T08:00');
     var enddate = startdate;
-    var length = (Math.floor(Math.random() * 3) + 1) * 30;
+    // var length = (Math.floor(Math.random() * 3) + 1) * 30;
 
     // adding random days (0-5) and hours (0-8) to the start moment
     startdate.getTime()+Math.floor(Math.random()*8)*60*60*1000;
@@ -24,7 +24,7 @@ const func = (next) => (create) => {
     //final_start = moment.utc(startdate).format('YYYY-MM-DD HH:mm');
     //final_end = moment.utc(enddate).format('YYYY-MM-DD HH:mm');
 
-      hsgBiddingFakeEvents.push({
+      fakeEvents.push({
         "id": course_id,
         "calendarId": "1",
         "title": "testevent "+course_id,
