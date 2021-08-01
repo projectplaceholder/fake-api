@@ -14,11 +14,11 @@ const func = (next) => (create) => {
       var date = new Date('2021-07-26T08:00');
       var rnd_days = parseInt(Math.floor(Math.random()*8)*60*60*1000);
       var rnd_hours = parseInt(Math.floor(Math.random()*5)*24*60*60*1000);
-      var rnd_length = parseInt((Math.floor(Math.random() * 3) + 1) * 30);
+      var rnd_length = parseInt((Math.floor(Math.random() * 3) + 1) * 30 * 60 * 1000);
 
       // adding random days (0-5) and hours (0-8) to the start moment
       var startdate = new Date(date.setTime(date.getTime()+rnd_days+rnd_hours)).toISOString();
-      var enddate = new Date(date.setTime(date.getTime()+rnd_days+rnd_hours+rnd_length)).toISOString();
+      var enddate = new Date(date.setTime(date.getTime()+rnd_length)).toISOString();
       
       // converting to YYYY-MM-DD HH:mm
       //final_start = moment.utc(startdate).format('YYYY-MM-DD HH:mm');
