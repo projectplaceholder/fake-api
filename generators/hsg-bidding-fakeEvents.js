@@ -4,7 +4,7 @@ const amount_courses = 600;
 //const amount_weeks = 14;
 
 const func = (next) => (create) => {
-  const path = `hsg-bidding-fakeEvents.json`;
+  const path = `fakeEvents.json`;
   const data = (amount_courses) => {
     var fakeEvents = [];
 
