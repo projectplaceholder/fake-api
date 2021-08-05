@@ -11,7 +11,7 @@ const func = (next) => (create) => {
     for (var course_id = 0; course_id < amount_courses; course_id++) {
     
       // defining the start moment and the random length of courses (in 30 min intervals)
-      var date = new Date('2021-07-26T08:00');
+      var date = new Date('2021-08-02T08:00');
       var rnd_days = parseInt(Math.floor(Math.random()*8)*60*60*1000);
       var rnd_hours = parseInt(Math.floor(Math.random()*5)*24*60*60*1000);
       var rnd_length = parseInt((Math.floor(Math.random() * 3) + 1) * 30 * 60 * 1000);

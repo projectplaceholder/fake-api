@@ -78,6 +78,7 @@ const Header = ({ siteTitle }) => (
       <p>
         <HomeLink to="/">{siteTitle}</HomeLink>
         <NavLink to="/about">About</NavLink>
+        <NavLink to="/wiki">Wiki</NavLink>
         <NavLink to="/db">Data</NavLink>
         <GitHubLink href="https://github.com/projectplaceholder/fake-api" target="_blank">
           GitHub
