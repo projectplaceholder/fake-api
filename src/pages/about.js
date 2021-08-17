@@ -7,7 +7,6 @@ import SEO from "../components/seo";
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
-  padding: 1.45rem 1.0875rem;
 `;
 
 const IndexPage = () => {
@@ -16,31 +15,15 @@ const IndexPage = () => {
       <SEO title="About" />
       <Content>
         <div>
-          <h2>About</h2>
-          <p>
-            We were in need for some mock data for our project. Like literally,
-            a copy-pasta JSON file would have done the job, but you know how it
-            is Fast forward a few hours and yes, I <b>really</b> had to make it
-            a REST API, give it an interface, allow for both static and dynamic
-            data creation, host it... I mean, I had no choice, right?{" "}
-            <span role="img" aria-label="upside-down-smile-emoji">
-              🙃
-            </span>
-          </p>
-          <p>
-            Anyway, luckily it didn't take me too long to do this. And the main
-            reason for that is that I was able to use the amazing tools other
-            people already created. In case you are interested in replicating
-            this or build something similar, you can find the full project with
-            all the references on{" "}
-            <a href="https://github.com/projectplaceholder/fake-api">GitHub</a>{" "}
-            or you can read the little intro down here (it got a bit late, but
-            promise I'm gonna write soon{" "}
-            <span role="img" aria-label="fingers-crossed-emoji">
-              🤞🏽
-            </span>
-            ).
-          </p>
+          <h2>Credits</h2>
+          <Content>
+            As mentioned in multiple places, this project is an adaption of the great work that went into JSON Server and it's extension. That library is definitely doing the heavy lifting here. What I did was to take their existing solutions and embed them in GatsbyJS and, through this, make them more accessible for other people. 
+            JSON Server allows you 
+          </Content>
+          <h2>What is Fake API good for?</h2>
+          <Content>
+          It's a GitHub template that allows you to create and host a simple JSON REST API and both statically and dynamically generate mock data for it's endpoints, and all of that within a few minutes. It's been super helpful for our projects, since unlike other (free) solutions, we are completely flexible about the format and extent of the data we handle with it. I'm aware that there are definitely less blown-up solutions for the underlying problem, but if someone out there finds it useful as we did: feel free to use it and drop me a message in case something's not working 😉
+          </Content>
         </div>
       </Content>
     </Layout>

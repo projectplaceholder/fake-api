@@ -14,14 +14,19 @@ const Content = styled.div`
 `
 
 const GatsbyLink = styled.a`
-  margin-left: 5px;
+  margin-left: 4px;
 `
 const JSONServerLink = styled.a`
-  margin-left: 5px;
+  margin-left: 4px;
 `
 
 const JSONServerExtensionLink = styled.a`
-  margin-left: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+`
+
+const LinkedInLink = styled.a`
+margin-left: 4px
 `
 
 const Footer = styled.footer`
@@ -46,11 +51,12 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            <p> Built with
-            {` `}</p>
-            <GatsbyLink href="https://www.gatsbyjs.com/starters/niklasmtj/gatsby-starter-julia">Gatsby, </GatsbyLink>
-            <JSONServerLink href="https://www.npmjs.com/package/json-server">JSON Server & </JSONServerLink>
+            <div> Built with
+            <GatsbyLink href="https://www.gatsbyjs.com/starters/niklasmtj/gatsby-starter-julia">Gatsby,</GatsbyLink>
+            <JSONServerLink href="https://www.npmjs.com/package/json-server">JSON Server &</JSONServerLink>
             <JSONServerExtensionLink href="https://www.npmjs.com/package/json-server-extension">JSON Server Extension</JSONServerExtensionLink>
+            by<LinkedInLink href="https://www.linkedin.com/in/michabrugger/">Micha</LinkedInLink>
+            </div>
             {/*
             <p>
             © {new Date().getFullYear()}
